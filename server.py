@@ -34,7 +34,7 @@ def swap_faces():
 
     source_img = read_image(request.files["source"])
     target_img = read_image(request.files["target"])
-
+    
     # Detect and swap faces
     source_faces = face_app.get(source_img)
     target_faces = face_app.get(target_img)
