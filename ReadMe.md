@@ -13,3 +13,12 @@ pip install -r requirements.txt
 ```
 python3 server.py
 ```
+
+path: venv/lib/python3.10/site-packages/basicsr/data/degradations.py
+```
+from torchvision.transforms.functional_tensor import rgb_to_grayscale
+
+to:
+
+from torchvision.transforms.functional import rgb_to_grayscale
+```
